@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dainar Music</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="images/dainar_logo.png" alt="DainarMusic"></img>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#section3">Setup</a></li>
+                    <li><a href="#section4">Application</a></li>
+                    <li><a href="#section5">Download</a></li>
+                    <li><a href="#section5">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                    <li><a id="beta">BETA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="home">
+        <div id="hero-img"></div>
+    </div>
+    <div class="container">
+        <div id="about" style="padding-top:50px;">
+            <div class="row" id="about-row">
+                <div class="col-sm-11">
+                    <!-- <h3>About</h3> -->
+                    <p>Dainar Music is an android app that plays music to FM frequences with the help of a raspberry pi web server. Just follow the steps bellow, tune in to the frequency you want from your car or home radio and listen to your favorite music!
+                        Keep scrolling to learn how it works and download it!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Open source</h3>
+                    <p>Dainar music android app is developed using the <a href="http://phonegap.com/" target="_blank">Adobe PhoneGap</a> mobile app development framework along with <a href="https://jquerymobile.com/" target="_blank">Jquery mobile</a> HTML5-based user interface system framework.</p>
+                    <p>Dainar music server app that resides inside the raspbian image is developed using <a href="https://nodejs.org" target="_blank">Node.js</a> and <a href="http://expressjs.com/" target="_blank">Express.js</a>. In order for the raspberry pi -or equivalent board- to be able to transmitt to fm frequencies, I've used the pifm python library.</p>
+                    <p>Everything is developed and distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License (MIT)</a>, and its open to everyone that want to make it better or customize for him/herself.</p>
+                    <p>On the next few sections you can find how to setup Dainar music and as well as download it.</p>
+                    <p>Keep in mind that although the app is working, it is still in BETA and it may have some bugs. I am aware that there may be better ways to achieve the same result. This is just a personal project i made and i want to share it. For any questions or suggestions use the contact section!</p>
+                </div>
+            </div>
+        </div>
+        <div id="section3" style="padding-top:50px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Setting up the raspberry pi</h3>
+                    <p>Once you have <a href="#section5">downloaded</a> the image from this website, use <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">this guide</a> to burn it to an sd card (WRITING AN IMAGE TO THE SD CARD section).</p>
+                    <p>You will also need a wifi dongle for your raspberry pi, unless it has one onboard.</p>
+                    <p>Then you need a copper wire (about 10-20cm), like <a href="http://www.robotshop.com/en/dfrobot-assorted-jumper-wires-premium.html" target="_blank">these</a> to use as an antenna on the raspberry pi. You just have to put in on the 4th pin of the left row like the picture below.</p>
+                    <img src=""></img>
+                    <p>After you plug all the above to the raspberry pi, insert the sd card with the raspian img and power it up.</p>
+                    <p>That's it! The Dainar music server app will start by default everytime you power up your rpi!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

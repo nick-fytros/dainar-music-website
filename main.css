@@ -1,0 +1,60 @@
+.jumbotron{
+  background: #454545;
+  /*background-size: 100%;*/
+}
+#beta{
+  color: #fff;
+  font-weight: bold;
+}
+#hero-img{
+  background: url('images/hero.png') no-repeat #454545;
+  background-size: contain;
+  margin: auto;
+  width: 70%;
+  height: 400px;
+}
+
+#about-row{
+  background: url('images/orange_bg.png') no-repeat;
+  background-size: 100% 172px;
+}
+
+#about-row > div{
+  margin: 50px 35px;
+}
+
+#about-row p{
+  padding: 20px 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  #hero-img{
+    margin: auto;
+    height: 300px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #hero-img{
+    height: 250px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #hero-img{
+    height: 200px;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #hero-img{
+    height: 0px;
+  }
+}
