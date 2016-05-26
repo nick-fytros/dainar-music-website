@@ -1,6 +1,32 @@
+h1{
+  font-size: 1px;
+}
+h2{
+  text-align: center;
+}
+.btn-default, .btn-default:active, .btn-default:visited, .btn-default:active:focus, .btn-default:active:visited, .btn-default:focus {
+  color: #fff;
+  background-color: #FF6C00 !important;
+  border: 1px #FF9A4F solid;
+}
+.btn-default:hover{
+  background-color: rgba(255, 108, 0, 0.85) !important;
+  color: #fff;
+  border: 1px #FFC091 solid;
+}
+a.btn-default{
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
 .jumbotron{
   background: #454545;
-  /*background-size: 100%;*/
+}
+#footer{
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    bottom: 0px;
+    background: #454545;
 }
 #beta{
   color: #fff;
@@ -13,22 +39,27 @@
   width: 70%;
   height: 400px;
 }
-
 #about-row{
   background: url('images/orange_bg.png') no-repeat;
   background-size: 100% 172px;
 }
-
 #about-row > div{
   margin: 50px 35px;
 }
-
 #about-row p{
   padding: 20px 0px;
   font-weight: bold;
   color: #fff;
 }
-
+.iphone-image{
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  transition: transform .3s linear;
+}
+.iphone-image:hover{
+  transform: scale(1.1);
+}
 @media screen and (max-width: 1600px) {
   #hero-img{
     margin: auto;
@@ -36,7 +67,6 @@
     width: 80%;
   }
 }
-
 @media screen and (max-width: 1200px) {
   #hero-img{
     height: 250px;
@@ -44,17 +74,21 @@
     margin: auto;
   }
 }
-
 @media screen and (max-width: 900px) {
   #hero-img{
     height: 200px;
     width: 90%;
     margin: auto;
   }
+  .iphone-image:hover{
+    transform: scale(1.0);
+  }
 }
-
 @media screen and (max-width: 680px) {
   #hero-img{
     height: 0px;
+  }
+  .iphone-image:hover{
+    transform: scale(1.0);
   }
 }

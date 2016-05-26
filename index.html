@@ -30,13 +30,14 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#section3">Setup</a></li>
-                    <li><a href="#section4">Application</a></li>
-                    <li><a href="#section5">Download</a></li>
-                    <li><a href="#section5">Contact</a></li>
+                    <li><a href="#setup">Setup</a></li>
+                    <li><a href="#application">Application</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#section6">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                    <li><h1>Dainar Music</h1></li>
                     <li><a id="beta">BETA</a></li>
                 </ul>
             </div>
@@ -47,16 +48,19 @@
     </div>
     <div class="container">
         <div id="about" style="padding-top:50px;">
+          <h2>About</h2>
+          <br>
             <div class="row" id="about-row">
-                <div class="col-sm-11">
+                <div class="col-sm-11 text-center">
                     <!-- <h3>About</h3> -->
                     <p>Dainar Music is an android app that plays music to FM frequences with the help of a raspberry pi web server. Just follow the steps bellow, tune in to the frequency you want from your car or home radio and listen to your favorite music!
                         Keep scrolling to learn how it works and download it!</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                     <h3>Open source</h3>
+                    <br>
                     <p>Dainar music android app is developed using the <a href="http://phonegap.com/" target="_blank">Adobe PhoneGap</a> mobile app development framework along with <a href="https://jquerymobile.com/" target="_blank">Jquery mobile</a> HTML5-based user interface system framework.</p>
                     <p>Dainar music server app that resides inside the raspbian image is developed using <a href="https://nodejs.org" target="_blank">Node.js</a> and <a href="http://expressjs.com/" target="_blank">Express.js</a>. In order for the raspberry pi -or equivalent board- to be able to transmitt to fm frequencies, I've used the pifm python library.</p>
                     <p>Everything is developed and distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License (MIT)</a>, and its open to everyone that want to make it better or customize for him/herself.</p>
@@ -65,36 +69,83 @@
                 </div>
             </div>
         </div>
-        <div id="section3" style="padding-top:50px;">
+        <div id="setup" style="padding-top:50px;">
+          <h2>Setup</h2>
+          <br>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
                     <h3>Setting up the raspberry pi</h3>
-                    <p>Once you have <a href="#section5">downloaded</a> the image from this website, use <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">this guide</a> to burn it to an sd card (WRITING AN IMAGE TO THE SD CARD section).</p>
+                    <br>
+                    <p>Once you have downloaded the image from the <a href="#download">download section</a>, use <a href="https://www.raspberrypi.org/documentation/installation/installing-images/" target="_blank">this guide</a> to burn it to an sd card (WRITING AN IMAGE TO THE SD CARD section).</p>
                     <p>You will also need a wifi dongle for your raspberry pi, unless it has one onboard.</p>
                     <p>Then you need a copper wire (about 10-20cm), like <a href="http://www.robotshop.com/en/dfrobot-assorted-jumper-wires-premium.html" target="_blank">these</a> to use as an antenna on the raspberry pi. You just have to put in on the 4th pin of the left row like the picture below.</p>
                     <img src=""></img>
                     <p>After you plug all the above to the raspberry pi, insert the sd card with the raspian img and power it up.</p>
-                    <p>That's it! The Dainar music server app will start by default everytime you power up your rpi!</p>
+                    <p>That's it! The Dainar music server app will start by default everytime you power up your rpi! You can then connect to its wifi and start the andoid app! The ssid (wifi name) is Dainarmusic and the password is ... You can't change the password yet but you will be able to do so in the next release.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <h3>Column 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Column 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Column 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                <div class="col-sm-12 text-center">
+                    <h3>Setting up the android app</h3>
+                    <br>
+                    <p>Installing the app on android is really simple.</p>
+                    <p>Once you have downloaded the .apk file from the <a href="#download">download section</a> you have to transfer it to your android device (smartphone or tablet), either by the usb cable or by directly downloading the .apk on your device.</p>
+                    <p>Then you just have to tap the .apk file and install it on your device. You may have to enable a setting that allows you to install .apk files on your android.</p>
+                    <p>You can follow <a href="http://www.ubergizmo.com/how-to/how-to-install-apk-files-sideloading-on-android/" target="_blank">this guide</a> in on how to install and .apk file on your android device.</p>
                 </div>
             </div>
         </div>
+        <div id="application" style="padding-top:50px;padding-bottom:30px;">
+          <h2>Application</h2>
+          <br>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h3>Description of the application steps</h3>
+                <br>
+                <!-- <p>The application steps are displayed below:</p> -->
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                  <p>1. First you choose the songs from your devise to upload to the raspberry pi, on the upload tab.</p>
+                  <img src="images/iphone.png" alt="dainarmusicapp" class="iphone-image"></img>
+                </div>
+                <div class="col-sm-3">
+                  <p>2. Then you can browse the songs from the music tab, play them, or create playlists.</p>
+                  <img src="images/iphone.png" alt="dainarmusicapp" class="iphone-image"></img>
+                </div>
+                <div class="col-sm-3">
+                  <p>3. After that you can go to the playlists tab and play the songs of the playlist you choose.</p>
+                  <img src="images/iphone.png" alt="dainarmusicapp" class="iphone-image"></img>
+                </div>
+                <div class="col-sm-3">
+                  <p>4. Lastly there is the settings tab which currently has the setting of the frequency to transmit.</p>
+                  <img src="images/iphone.png" alt="dainarmusicapp" class="iphone-image"></img>
+                </div>
+            </div>
+        </div>
+        <div id="download" style="padding-top:50px;">
+          <h2>Download</h2>
+          <br>
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h3>Dainar music server app raspbian image</h3>
+                    <br>
+                    <p>You can download the raspbian image with dainar music installed. The image also has the pifm library installed and autostarts the nodejs server on boot. The nodejs app runs at ip: 192.168.2.1 and on port: 3000.</p>
+                    <a class="btn btn-default btn-lg" href="images/favicon.png" download>Download the raspbian image</a>
+                    <p>If you just want the server Nodejs-Expressjs code you can clone it from <a href="https://github.com/nick-fytros/dainar-music-server-app.git" target="_blank">its github repo</a>.</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h3>Dainar music android app</h3>
+                    <br>
+                    <p>You can download the android apk file and install it to your android devise as explained in the <a href="#setup">setup section</a>.</p>
+                    <a class="btn btn-default btn-lg" href="images/favicon.png" download>Download the apk file</a>
+                    <p>If you want the android app code (PhoneGap) you can clone it from <a href="https://github.com/nick-fytros/dainar-music-app.git" target="_blank">its github repo</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
     </div>
 </body>
 
